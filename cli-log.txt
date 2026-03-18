@@ -1,0 +1,39 @@
+Git Workflow for TASK 1:
+
+git clone https://github.com/vvvenkov/SEDO-Retake-Exam-2026-1
+
+git checkout -b chore/refactor-userService-class
+git add .
+git commit -m "first commit"
+git add .
+git commit -m "second commit"
+git add .
+git commit -m "third commit"
+git log --oneline
+git rebase -i HEAD~3
+git push --force-with-lease origin feature/refactor-userService-class
+
+git checkout main
+git checkout -b feature/add-a-new-UI-button
+git add .
+git commit -m "first commit"
+git add .
+git commit -m "second commit"
+git add .
+git commit -m "third commit"
+git log --oneline
+git rebase -i HEAD~3
+git push --force-with-lease origin feature/add-a-new-UI-button
+
+
+git checkout main
+git checkout -b bug/fix-homepage-load-error
+git add .
+git commit -m "first commit"
+git add .
+git commit -m "second commit"
+git add .
+git commit -m "third commit"
+git log --oneline
+git rebase -i HEAD~3
+git push --force-with-lease origin bug/fix-homepage-load-error
